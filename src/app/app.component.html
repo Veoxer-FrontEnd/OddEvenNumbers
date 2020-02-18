@@ -5,7 +5,8 @@
       <div class="row">
         <app-game-control (counterStartd)="numberIncremented($event)"></app-game-control>
       </div>
-      <div class="row">
+      <hr>
+      <div class="row list-group">
         <div *ngFor="let nbr of numbersArray">
           <app-even *ngIf="nbr%2 === 0" [evenNbr]="nbr"></app-even>
           <app-odd *ngIf="nbr%2 > 0" [oddNbr]="nbr"></app-odd>
